@@ -1,0 +1,12 @@
+<div class="col-12">
+    <div class="card-box bg-orange">
+        <div class="inner">
+            <h1> {{ (clienteStore | async)?.promedio }} </h1>
+            <p> Promedio de Edades</p>
+        </div>
+        <div class="icon">
+            <i-feather name="users" style="width: 90px"></i-feather>
+        </div>
+        <a  class="card-box-footer">Más detalles <i-feather name="arrow-right"></i-feather></a>
+    </div>
+</div>

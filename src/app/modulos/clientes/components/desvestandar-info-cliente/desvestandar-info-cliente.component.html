@@ -1,0 +1,12 @@
+<div class="col-12">
+    <div class="card-box bg-green">
+        <div class="inner">
+            <h1> {{ (clienteStore | async)?.desviacion }} </h1>
+            <p> Desviación Estandar (Edad)</p> 
+        </div>
+        <div class="icon">
+            <i-feather name="bar-chart-2" style="width: 100px"></i-feather>
+        </div>
+        <a [routerLink]="[]" class="card-box-footer">Más detalles <i-feather name="arrow-right"></i-feather></a>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+body {    background: #f7f7f7 !important;}
+
+.dashboard-evaluacion  {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.dashboard-evaluacion .menu-izq {
+    color: rgba(255,255,255,0.9);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1c4cc3), to(#163b96));
+    background-image: linear-gradient(to bottom, #1c4cc3 0%, #163b96 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    position: relative;
+    width: 90px;
+    border-radius: 6px 0px 0px 6px;
+    display: table-cell;
+    vertical-align: top;
+}
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ul.main-menu {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+ul.main-menu>li {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+}
+ul.main-menu>li:last-child {
+    border-bottom: none;
+}
+ul.main-menu>li>a {
+    display: block;
+    padding: 15px 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+ul.main-menu a .icon-w{
+    color: #90acfb;
+    opacity: 0.4;
+}
+
+ul.main-menu a .icon-w.enable{
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+
+.dashboard-evaluacion .contenido {
+    display: table-cell;
+    vertical-align: top;
+    background: #fff;
+    border-radius: 0px 6px 6px 0px;
+    box-shadow: 1px 1px 5px #c3c3c3;
+}
+
+
+.card-box {
+    position: relative;
+    color: #fff;
+    padding: 20px 10px 40px;
+    margin: 20px 0px;
+}
+.card-box:hover {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.card-box:hover .icon i {
+    font-size: 100px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.card-box .inner {
+    padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    padding: 0;
+    text-align: left;
+}
+.card-box p {
+    font-size: 15px;
+}
+.card-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    z-index: 0;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 3px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-decoration: none;
+}
+.card-box:hover .card-box-footer {
+    background: rgba(0, 0, 0, 0.3);
+}
+.bg-blue {
+    background-color: #00c0ef !important;
+}
+.bg-green {
+    background-color: #00a65a !important;
+}
+.bg-orange {
+    background-color: #f39c12 !important;
+}
+.bg-red {
+    background-color: #d9534f !important;
+}

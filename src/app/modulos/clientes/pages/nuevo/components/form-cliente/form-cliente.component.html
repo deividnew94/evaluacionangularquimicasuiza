@@ -1,0 +1,56 @@
+<div class="card" style="border:0">
+    <div class="card-header">
+      Nuevo Cliente
+    </div>
+    <div class="card-body">
+
+
+        <form class="mt-4" [formGroup]="formulario" (ngSubmit)="createCliente()">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Nombres</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" formControlName="nombres" [ngClass]="{'is-invalid': checkInput('nombres', 'invalid')}">
+                  <div *ngIf="checkInput('nombres', 'invalid', 'required')" class="alert alert-danger alert-error" role="alert"><i class="fas fa-times"></i> El nombre es requerido.</div>
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Apellidos</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" formControlName="apellidos" [ngClass]="{'is-invalid': checkInput('apellidos', 'invalid')}">
+                  <div *ngIf="checkInput('apellidos', 'invalid', 'required')" class="alert alert-danger alert-error" role="alert"><i class="fas fa-times"></i> Los apellidos son requeridos.</div>
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Fecha de Nacimiento</label>
+                <div class="col-sm-9">
+                  <input type="date" class="form-control" formControlName="fecha_nacimiento" [ngClass]="{'is-invalid': checkInput('fecha_nacimiento', 'invalid')}">
+                  <div *ngIf="checkInput('fecha_nacimiento', 'invalid', 'required')" class="alert alert-danger alert-error" role="alert"><i class="fas fa-times"></i> La fecha de nacimiento es requerido.</div>
+
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">Edad</label>
+              <div class="col-sm-9">
+                <input type="number" class="form-control" formControlName="edad" [ngClass]="{'is-invalid': checkInput('edad', 'invalid')}">
+                <div *ngIf="checkInput('edad', 'invalid', 'required')" class="alert alert-danger alert-error" role="alert"><i class="fas fa-times"></i> La edad es requerida.</div>
+
+              </div>
+          </div>
+
+
+            <div class="form-group ">
+
+                <button type="submit" class="btn btn-primary float-right">Registrar cliente</button>
+
+            </div>
+          </form>
+
+
+    </div>
+  </div>

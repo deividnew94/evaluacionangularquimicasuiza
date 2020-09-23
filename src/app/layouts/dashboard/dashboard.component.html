@@ -1,0 +1,61 @@
+
+<div class="container mt-3">
+<div class="dashboard-evaluacion">
+
+<div class="menu-izq">
+    <ul class="main-menu">
+        <li class="has-sub-menu">
+           <a  [routerLink]="['/clientes/nuevo']">
+              <div class="icon-w enable">	<i-feather name="user" style="width: 32px;"></i-feather></div>
+           </a>
+           
+        </li>
+        <li class="has-sub-menu">
+            <a [routerLink]="['/clientes/lista']">
+               <div class="icon-w enable">	<i-feather name="grid" style="width: 32px;"></i-feather></div>
+            </a>
+        </li>
+        
+        <li class="has-sub-menu">
+            <a [routerLink]="[]">
+               <div class="icon-w">	<i-feather name="box" style="width: 32px;"></i-feather></div>
+            </a>
+        </li>
+        <li class="has-sub-menu">
+            <a [routerLink]="[]">
+               <div class="icon-w">	<i-feather name="calendar" style="width: 32px;"></i-feather></div>
+            </a>
+        </li>
+        <li class="has-sub-menu">
+            <a [routerLink]="[]">
+               <div class="icon-w">	<i-feather name="command" style="width: 32px;"></i-feather></div>
+            </a>
+        </li>
+        <li class="has-sub-menu">
+            <a [routerLink]="[]">
+               <div class="icon-w">	<i-feather name="database" style="width: 32px;"></i-feather></div>
+            </a>
+        </li>
+        <li class="has-sub-menu">
+            <a [routerLink]="[]">
+               <div class="icon-w">	<i-feather name="film" style="width: 32px;"></i-feather></div>
+            </a>
+        </li>
+   
+     </ul>
+</div>
+
+    
+<div class="contenido">
+
+    <router-outlet></router-outlet>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+

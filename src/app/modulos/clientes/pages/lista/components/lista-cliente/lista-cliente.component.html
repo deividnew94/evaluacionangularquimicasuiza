@@ -1,0 +1,38 @@
+<div class="card" style="border:0">
+    <div class="card-header">
+      Clientes
+    </div>
+    <div class="card-body">
+
+
+
+        <div class="row">
+          <app-promedio-info-cliente class="col-lg-6 col-sm-12"></app-promedio-info-cliente>
+          <app-desvestandar-info-cliente class="col-lg-6 col-sm-12"></app-desvestandar-info-cliente>
+        </div>
+
+
+
+
+        <h5> Lista de clientes</h5>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombres</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Fecha de Nacimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes ">
+        <th scope="row">{{cliente.nombres}}</th>
+        <td>{{cliente.apellidos}}</td>
+        <td>{{cliente.edad}}</td>
+        <td>{{cliente.fecha_nacimiento}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
